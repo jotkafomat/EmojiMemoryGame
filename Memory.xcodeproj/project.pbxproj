@@ -13,6 +13,8 @@
 		E116FC7D25938C8B00A89C7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E116FC7C25938C8B00A89C7B /* Preview Assets.xcassets */; };
 		E116FC8825938C8B00A89C7B /* EmojiMemoryGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116FC8725938C8B00A89C7B /* EmojiMemoryGameTests.swift */; };
 		E116FC9325938C8B00A89C7B /* EmojiMemoryGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116FC9225938C8B00A89C7B /* EmojiMemoryGameUITests.swift */; };
+		E116FCA425938E3900A89C7B /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116FCA325938E3900A89C7B /* MemoryGame.swift */; };
+		E116FCAD259390B200A89C7B /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116FCAC259390B200A89C7B /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,18 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E116FC7225938C8700A89C7B /* EmojiMemoryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiMemoryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E116FC7225938C8700A89C7B /* Memory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E116FC7525938C8700A89C7B /* EmojiMemoryGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameApp.swift; sourceTree = "<group>"; };
 		E116FC7725938C8700A89C7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E116FC7925938C8B00A89C7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E116FC7C25938C8B00A89C7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E116FC7E25938C8B00A89C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E116FC8325938C8B00A89C7B /* EmojiMemoryGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojiMemoryGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E116FC8325938C8B00A89C7B /* MemoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E116FC8725938C8B00A89C7B /* EmojiMemoryGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameTests.swift; sourceTree = "<group>"; };
 		E116FC8925938C8B00A89C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E116FC8E25938C8B00A89C7B /* EmojiMemoryGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojiMemoryGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E116FC8E25938C8B00A89C7B /* MemoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E116FC9225938C8B00A89C7B /* EmojiMemoryGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameUITests.swift; sourceTree = "<group>"; };
 		E116FC9425938C8B00A89C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E116FCA325938E3900A89C7B /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		E116FCAC259390B200A89C7B /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +89,9 @@
 		E116FC7325938C8700A89C7B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E116FC7225938C8700A89C7B /* EmojiMemoryGame.app */,
-				E116FC8325938C8B00A89C7B /* EmojiMemoryGameTests.xctest */,
-				E116FC8E25938C8B00A89C7B /* EmojiMemoryGameUITests.xctest */,
+				E116FC7225938C8700A89C7B /* Memory.app */,
+				E116FC8325938C8B00A89C7B /* MemoryTests.xctest */,
+				E116FC8E25938C8B00A89C7B /* MemoryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +104,8 @@
 				E116FC7925938C8B00A89C7B /* Assets.xcassets */,
 				E116FC7E25938C8B00A89C7B /* Info.plist */,
 				E116FC7B25938C8B00A89C7B /* Preview Content */,
+				E116FCA825938E4C00A89C7B /* Model */,
+				E116FCB1259390C600A89C7B /* ViewModel */,
 			);
 			path = EmojiMemoryGame;
 			sourceTree = "<group>";
@@ -130,12 +136,28 @@
 			path = EmojiMemoryGameUITests;
 			sourceTree = "<group>";
 		};
+		E116FCA825938E4C00A89C7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E116FCA325938E3900A89C7B /* MemoryGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E116FCB1259390C600A89C7B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E116FCAC259390B200A89C7B /* EmojiMemoryGame.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E116FC7125938C8700A89C7B /* EmojiMemoryGame */ = {
+		E116FC7125938C8700A89C7B /* Memory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E116FC9725938C8B00A89C7B /* Build configuration list for PBXNativeTarget "EmojiMemoryGame" */;
+			buildConfigurationList = E116FC9725938C8B00A89C7B /* Build configuration list for PBXNativeTarget "Memory" */;
 			buildPhases = (
 				E116FC6E25938C8700A89C7B /* Sources */,
 				E116FC6F25938C8700A89C7B /* Frameworks */,
@@ -145,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = EmojiMemoryGame;
+			name = Memory;
 			productName = EmojiMemoryGame;
-			productReference = E116FC7225938C8700A89C7B /* EmojiMemoryGame.app */;
+			productReference = E116FC7225938C8700A89C7B /* Memory.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E116FC8225938C8B00A89C7B /* EmojiMemoryGameTests */ = {
+		E116FC8225938C8B00A89C7B /* MemoryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E116FC9A25938C8B00A89C7B /* Build configuration list for PBXNativeTarget "EmojiMemoryGameTests" */;
+			buildConfigurationList = E116FC9A25938C8B00A89C7B /* Build configuration list for PBXNativeTarget "MemoryTests" */;
 			buildPhases = (
 				E116FC7F25938C8B00A89C7B /* Sources */,
 				E116FC8025938C8B00A89C7B /* Frameworks */,
@@ -163,14 +185,14 @@
 			dependencies = (
 				E116FC8525938C8B00A89C7B /* PBXTargetDependency */,
 			);
-			name = EmojiMemoryGameTests;
+			name = MemoryTests;
 			productName = EmojiMemoryGameTests;
-			productReference = E116FC8325938C8B00A89C7B /* EmojiMemoryGameTests.xctest */;
+			productReference = E116FC8325938C8B00A89C7B /* MemoryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E116FC8D25938C8B00A89C7B /* EmojiMemoryGameUITests */ = {
+		E116FC8D25938C8B00A89C7B /* MemoryUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E116FC9D25938C8B00A89C7B /* Build configuration list for PBXNativeTarget "EmojiMemoryGameUITests" */;
+			buildConfigurationList = E116FC9D25938C8B00A89C7B /* Build configuration list for PBXNativeTarget "MemoryUITests" */;
 			buildPhases = (
 				E116FC8A25938C8B00A89C7B /* Sources */,
 				E116FC8B25938C8B00A89C7B /* Frameworks */,
@@ -181,9 +203,9 @@
 			dependencies = (
 				E116FC9025938C8B00A89C7B /* PBXTargetDependency */,
 			);
-			name = EmojiMemoryGameUITests;
+			name = MemoryUITests;
 			productName = EmojiMemoryGameUITests;
-			productReference = E116FC8E25938C8B00A89C7B /* EmojiMemoryGameUITests.xctest */;
+			productReference = E116FC8E25938C8B00A89C7B /* MemoryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +230,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E116FC6D25938C8700A89C7B /* Build configuration list for PBXProject "EmojiMemoryGame" */;
+			buildConfigurationList = E116FC6D25938C8700A89C7B /* Build configuration list for PBXProject "Memory" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,9 +243,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E116FC7125938C8700A89C7B /* EmojiMemoryGame */,
-				E116FC8225938C8B00A89C7B /* EmojiMemoryGameTests */,
-				E116FC8D25938C8B00A89C7B /* EmojiMemoryGameUITests */,
+				E116FC7125938C8700A89C7B /* Memory */,
+				E116FC8225938C8B00A89C7B /* MemoryTests */,
+				E116FC8D25938C8B00A89C7B /* MemoryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E116FCA425938E3900A89C7B /* MemoryGame.swift in Sources */,
 				E116FC7825938C8700A89C7B /* ContentView.swift in Sources */,
 				E116FC7625938C8700A89C7B /* EmojiMemoryGameApp.swift in Sources */,
+				E116FCAD259390B200A89C7B /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +309,12 @@
 /* Begin PBXTargetDependency section */
 		E116FC8525938C8B00A89C7B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E116FC7125938C8700A89C7B /* EmojiMemoryGame */;
+			target = E116FC7125938C8700A89C7B /* Memory */;
 			targetProxy = E116FC8425938C8B00A89C7B /* PBXContainerItemProxy */;
 		};
 		E116FC9025938C8B00A89C7B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E116FC7125938C8700A89C7B /* EmojiMemoryGame */;
+			target = E116FC7125938C8700A89C7B /* Memory */;
 			targetProxy = E116FC8F25938C8B00A89C7B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -474,7 +498,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmojiMemoryGame.app/EmojiMemoryGame";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memory.app/Memory";
 			};
 			name = Debug;
 		};
@@ -496,7 +520,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmojiMemoryGame.app/EmojiMemoryGame";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memory.app/Memory";
 			};
 			name = Release;
 		};
@@ -543,7 +567,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E116FC6D25938C8700A89C7B /* Build configuration list for PBXProject "EmojiMemoryGame" */ = {
+		E116FC6D25938C8700A89C7B /* Build configuration list for PBXProject "Memory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E116FC9525938C8B00A89C7B /* Debug */,
@@ -552,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E116FC9725938C8B00A89C7B /* Build configuration list for PBXNativeTarget "EmojiMemoryGame" */ = {
+		E116FC9725938C8B00A89C7B /* Build configuration list for PBXNativeTarget "Memory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E116FC9825938C8B00A89C7B /* Debug */,
@@ -561,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E116FC9A25938C8B00A89C7B /* Build configuration list for PBXNativeTarget "EmojiMemoryGameTests" */ = {
+		E116FC9A25938C8B00A89C7B /* Build configuration list for PBXNativeTarget "MemoryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E116FC9B25938C8B00A89C7B /* Debug */,
@@ -570,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E116FC9D25938C8B00A89C7B /* Build configuration list for PBXNativeTarget "EmojiMemoryGameUITests" */ = {
+		E116FC9D25938C8B00A89C7B /* Build configuration list for PBXNativeTarget "MemoryUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E116FC9E25938C8B00A89C7B /* Debug */,
