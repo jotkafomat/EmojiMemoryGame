@@ -17,6 +17,7 @@
 		E116FCAD259390B200A89C7B /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116FCAC259390B200A89C7B /* EmojiMemoryGame.swift */; };
 		E161A765259D24CB00EF2F72 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E161A764259D24CB00EF2F72 /* GridView.swift */; };
 		E161A76D259D2ADB00EF2F72 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E161A76C259D2ADB00EF2F72 /* GridLayout.swift */; };
+		E161A772259DE58C00EF2F72 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E161A771259DE58C00EF2F72 /* Array+Identifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E116FCAC259390B200A89C7B /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		E161A764259D24CB00EF2F72 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		E161A76C259D2ADB00EF2F72 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		E161A771259DE58C00EF2F72 /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				E116FCA325938E3900A89C7B /* MemoryGame.swift */,
+				E161A771259DE58C00EF2F72 /* Array+Identifiable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				E116FC7625938C8700A89C7B /* EmojiMemoryGameApp.swift in Sources */,
 				E161A76D259D2ADB00EF2F72 /* GridLayout.swift in Sources */,
 				E161A765259D24CB00EF2F72 /* GridView.swift in Sources */,
+				E161A772259DE58C00EF2F72 /* Array+Identifiable.swift in Sources */,
 				E116FCAD259390B200A89C7B /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

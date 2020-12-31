@@ -17,6 +17,7 @@ struct EmojiMemoryGameView: View {
                 CardView(card: card).onTapGesture {
                     viewModel.choose(card: card)
                 }
+                .padding(5)
             }
         }
         .padding()
@@ -38,7 +39,7 @@ struct CardView: View {
                     RoundedRectangle(cornerRadius: cornerRadius).fill()
                 }
             }
-            .aspectRatio(2/3, contentMode: .fit)
+//            .aspectRatio(2/3, contentMode: .fit)
             .font(Font.system(size: min(geometry.size.width, geometry.size.height) * fontScaleFactor))
         }
     }
