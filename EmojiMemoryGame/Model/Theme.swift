@@ -24,8 +24,25 @@ struct Theme {
                              color: .pink)
     static let winter = Theme(name: "Winter",
                               contents: ["🥶", "❄️", "☃️", "⛷", "🏂"],
-                              limitPairs: nil,
+                              limitPairs: Int.random(in: 2...5),
                               color: .blue)
+    static let party = Theme(name: "Party",
+                             contents: ["🎉","🥳","🍾","🎁","🎊","🪅","🎂"],
+                             limitPairs: Int.random(in: 2...7),
+                             color: .green)
+    static let glasses = Theme(name: "Glasses",
+                            contents: ["😎","🤓","🧐","🕶","🔎","👓","🥸","🥽"],
+                            limitPairs: Int.random(in: 2...8),
+                            color: .purple)
+    static let moon = Theme(name: "Moon",
+                            contents: ["🌕","🌖","🌗","🌘","🌑","🌒","🌓","🌔","🌙","🌛","🌜","🌝","🌚"],
+                            limitPairs: Int.random(in: 2...13),
+                            color: .purple)
+    static let city = Theme(name: "Moon",
+                            contents: ["🌁","🌆","🌃","🏢","🌇","🏙","🌉"],
+                            limitPairs: Int.random(in: 2...7),
+                            color: .purple)
+    
     
     static let all = [Theme.angry, .winter]
     
