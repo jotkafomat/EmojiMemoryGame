@@ -20,7 +20,7 @@ struct Theme {
     
     static let angry = Theme(name: "Angry Emoji",
                              contents: ["😱", "🤬", "💩", "😡", "🤢"],
-                             limitPairs: Int.random(in: 1...5),
+                             limitPairs: Int.random(in: 2...5),
                              color: .pink)
     static let winter = Theme(name: "Winter",
                               contents: ["🥶", "❄️", "☃️", "⛷", "🏂"],
