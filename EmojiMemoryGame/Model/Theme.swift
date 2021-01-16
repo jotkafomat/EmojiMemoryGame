@@ -37,14 +37,14 @@ struct Theme {
     static let moon = Theme(name: "Moon",
                             contents: ["🌕","🌖","🌗","🌘","🌑","🌒","🌓","🌔","🌙","🌛","🌜","🌝","🌚"],
                             limitPairs: Int.random(in: 2...13),
-                            color: .purple)
-    static let city = Theme(name: "Moon",
+                            color: .gray)
+    static let city = Theme(name: "City",
                             contents: ["🌁","🌆","🌃","🏢","🌇","🏙","🌉"],
                             limitPairs: Int.random(in: 2...7),
-                            color: .purple)
+                            color: .red)
     
     
-    static let all = [Theme.angry, .winter]
+    static let all = [Theme.angry, .winter, .party, .city, .glasses, .moon]
     
     static var random: Theme {
         all.randomElement()!
