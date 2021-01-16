@@ -25,7 +25,10 @@ struct EmojiMemoryGameView: View {
             .foregroundColor(EmojiMemoryGame.theme.color)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(
-                leading: Text(EmojiMemoryGame.theme.name),
+                leading: HStack {
+                    Text(EmojiMemoryGame.theme.name)
+                    Text("Score: \(viewModel.score)")
+                },
                 trailing: Button(
                     action: viewModel.newGame,
                     label: {
