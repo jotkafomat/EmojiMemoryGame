@@ -65,4 +65,29 @@ class MemoryGameScoringTest: XCTestCase {
         memoryGame.choose(card: c2)
         XCTAssertEqual(memoryGame.score, 6)
     }
+    func testPenaltyForFlippingFourthCardMoreThanOnce() {
+        memoryGame.choose(card: a1)
+        memoryGame.choose(card: b1)
+        memoryGame.choose(card: b2)
+        memoryGame.choose(card: a1)//
+        XCTAssertEqual(memoryGame.score, -1)
+    }
+    func testPenaltyForFlippingThirdCardMoreThanOnce() {
+        memoryGame.choose(card: a1)
+        memoryGame.choose(card: b1)
+        memoryGame.choose(card: c1)
+        memoryGame.choose(card: b1)
+        XCTAssertEqual(memoryGame.score, -1)
+    }
+    func testPenaltyForFlippingCardsMoreThanOnce() {
+        memoryGame.choose(card: a1)
+        memoryGame.choose(card: b1)
+        memoryGame.choose(card: c1)
+        memoryGame.choose(card: b2)
+        memoryGame.choose(card: a1)
+        memoryGame.choose(card: b1)
+        XCTAssertEqual(memoryGame.score, -2)
+    }
+    
+    
 }
