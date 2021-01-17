@@ -38,32 +38,33 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
               !cards[chosenIndex].isMatched  else {
             return
         }
+        
         // check if there is already a card face up
-        if let potentialMatchIndex = indexOfTheOneAndOnlyFaceUpCard {
-            //check if it matches the card chosen now
-            if cards[chosenIndex].content == cards[potentialMatchIndex].content {
-                //mark them both as matched
-                cards[chosenIndex].isMatched = true
-                cards[potentialMatchIndex].isMatched = true
-                // award the user with points
-                score += 2
-            } else {
-                // if cards dont match
-                // and were previously flipped penalise user
-                if cards[chosenIndex].wasFlipped == true  {
-                    score -= 1
-                }
-                if cards[potentialMatchIndex].wasFlipped == true {
-                    score -= 1
-                }
-                //mark both cards as flipped previously
-                cards[chosenIndex].wasFlipped = true
-                cards[potentialMatchIndex].wasFlipped = true
-            }
-            self.cards[chosenIndex].isFaceUp = true
-        } else {
+        guard let potentialMatchIndex = indexOfTheOneAndOnlyFaceUpCard else {
             indexOfTheOneAndOnlyFaceUpCard = chosenIndex
+            return
         }
+        //check if it matches the card chosen now
+        if cards[chosenIndex].content == cards[potentialMatchIndex].content {
+            //mark them both as matched
+            cards[chosenIndex].isMatched = true
+            cards[potentialMatchIndex].isMatched = true
+            // award the user with points
+            score += 2
+        } else {
+            // if cards dont match
+            // and were previously flipped penalise user
+            if cards[chosenIndex].wasFlipped {
+                score -= 1
+            }
+            if cards[potentialMatchIndex].wasFlipped {
+                score -= 1
+            }
+            //mark both cards as flipped previously
+            cards[chosenIndex].wasFlipped = true
+            cards[potentialMatchIndex].wasFlipped = true
+        }
+        self.cards[chosenIndex].isFaceUp = true
         
     }
     
