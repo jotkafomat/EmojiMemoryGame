@@ -11,36 +11,41 @@ struct Theme {
     
     let name: String
     let contents: [String]
-    let limitPairs: Int?
+    let randomNumber: Bool
     let color: Color
     
-    var numberOfPair: Int {
-        min(contents.count, limitPairs ?? contents.count)
+    init(name: String,
+         contents: [String],
+         randomNumber: Bool = false,
+         color: Color) {
+        self.name = name
+        self.contents = contents
+        self.randomNumber = randomNumber
+        self.color = color
+    }
+    
+    var numberOfPairs: Int {
+        randomNumber ? Int.random(in: 2...contents.count) : contents.count
     }
     
     static let angry = Theme(name: "Angry Emoji",
                              contents: ["😱", "🤬", "💩", "😡", "🤢"],
-                             limitPairs: Int.random(in: 2...5),
                              color: .pink)
     static let winter = Theme(name: "Winter",
                               contents: ["🥶", "❄️", "☃️", "⛷", "🏂"],
-                              limitPairs: Int.random(in: 2...5),
                               color: .blue)
     static let party = Theme(name: "Party",
                              contents: ["🎉","🥳","🍾","🎁","🎊","🪅","🎂"],
-                             limitPairs: Int.random(in: 2...7),
                              color: .green)
     static let glasses = Theme(name: "Glasses",
                             contents: ["😎","🤓","🧐","🕶","🔎","👓","🥸","🥽"],
-                            limitPairs: Int.random(in: 2...8),
                             color: .purple)
     static let moon = Theme(name: "Moon",
                             contents: ["🌕","🌖","🌗","🌘","🌑","🌒","🌓","🌔","🌙","🌛","🌜","🌝","🌚"],
-                            limitPairs: Int.random(in: 2...13),
+                            randomNumber: true,
                             color: .gray)
     static let city = Theme(name: "City",
                             contents: ["🌁","🌆","🌃","🏢","🌇","🏙","🌉"],
-                            limitPairs: Int.random(in: 2...7),
                             color: .red)
     
     
