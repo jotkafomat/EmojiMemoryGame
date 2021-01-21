@@ -16,7 +16,9 @@ struct EmojiMemoryGameView: View {
             HStack {
                 GridView(viewModel.cards) { card in
                     CardView(card: card).onTapGesture {
-                        viewModel.choose(card: card)
+                        withAnimation(.linear(duration: 2)) {
+                            viewModel.choose(card: card)
+                        }
                     }
                     .padding(5)
                 }
@@ -65,6 +67,7 @@ struct CardView: View {
                                 .repeatForever(autoreverses: false) : .default)
             }
             .cardify(isFaceUp: card.isFaceUp)
+            .transition(AnyTransition.scale)
             //            .aspectRatio(2/3, contentMode: .fit)
         }
     }
