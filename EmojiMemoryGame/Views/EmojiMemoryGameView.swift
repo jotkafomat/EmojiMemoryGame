@@ -27,13 +27,16 @@ struct EmojiMemoryGameView: View {
             .navigationBarItems(
                 leading: HStack {
                     Text(EmojiMemoryGame.theme.name)
+                    Spacer()
                     Text("Score: \(viewModel.score)")
                 },
-                trailing: Button(
-                    action: viewModel.newGame,
-                    label: {
-                        Text("New Game")
-                    }))
+                trailing: Button(action: {
+                    withAnimation(.easeOut) {
+                        viewModel.newGame()
+                    }
+                }, label: {
+                    Text("New Game")
+                }))
         }
     }
 }
