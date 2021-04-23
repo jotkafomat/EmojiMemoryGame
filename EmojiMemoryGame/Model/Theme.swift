@@ -25,7 +25,7 @@ struct Theme {
     }
     
     var numberOfPairs: Int {
-        randomNumber ? Int.random(in: 2...contents.count) : contents.count
+        contents.count
     }
     
     static let angry = Theme(name: "Angry Emoji",
