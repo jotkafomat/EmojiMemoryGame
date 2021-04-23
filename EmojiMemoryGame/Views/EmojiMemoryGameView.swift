@@ -11,7 +11,6 @@ struct EmojiMemoryGameView: View {
     
     @ObservedObject var viewModel: EmojiMemoryGame
     
-    
     var body: some View {
         NavigationView {
             HStack {

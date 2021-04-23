@@ -30,7 +30,7 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
         cards = Array<Card>()
         
         for index in 0..<numberOfPairsOfCards {
-            let content = cardContentFactory(index)
+            let content = cardContentFactory(index) //{ index in return theme.contents[index] }
             cards.append(Card(id: index*2, content: content))
             cards.append(Card(id: index*2+1, content: content))
         }
