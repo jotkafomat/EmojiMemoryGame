@@ -9,7 +9,11 @@ import SwiftUI
 
 class EmojiMemoryGame: ObservableObject {
 
-    @Published private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
+    @Published private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame() {
+        didSet {
+            print(EmojiMemoryGame.theme.json?.utf8 ?? "nil")
+        }
+    }
     
     static var theme = Theme.random
     
@@ -32,6 +36,11 @@ class EmojiMemoryGame: ObservableObject {
         EmojiMemoryGame.theme = Theme.random
         model = EmojiMemoryGame.createMemoryGame()
     }
+}
+
+extension Data {
+    // just a simple converter from a Data to a String
+    var utf8: String? { String(data: self, encoding: .utf8 ) }
 }
 
 
